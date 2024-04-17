@@ -73,3 +73,12 @@ For this deliverable I used WebSocket to broadcast orders to renters on the soci
  - **Frontend makes WebSocket connection** - DONE
  - **Data sent over WebSocket connection** - DONE
  - **WebSocket data displayed** - After a renter places an order, they can see orders being placed by other renters!
+
+ ## React Deliverable
+
+For this deliverable I converted the application over to use React.
+
+ - **Bundled and transpiled (Vite)** - DONE
+ - **Components** - I didn't have time to implement functional components for my project specifically, though the I put the stubs.
+ - **Router** - Routing between all components (Register(Home), Sign in, Address, Orders, Social Orders, Renter Food Options, Vacation Rental Options)
+ - **Hooks** - I didn't have time to implement this.
