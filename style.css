@@ -1,0 +1,172 @@
+html {
+    height: 100%;
+  }
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eaeaea;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+main {
+    flex: 1;
+  }
+
+header {
+    background-color: #333;
+    color: #f2f2f2;
+    padding: 20px;
+    text-align: left;
+}
+
+nav menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav menu li {
+    padding: 0 10px;
+}
+
+nav menu li a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 1.1em;
+    position: relative;
+    display: inline-block;
+    transition: color 0.5s;
+}
+
+nav menu li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #3498db;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.5s;
+}
+
+nav menu li a:hover {
+    color: #95a5a6;
+}
+
+nav menu li a:hover::after {
+    width: 100%;
+}
+
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #3498db;
+    text-decoration: underline;
+}
+
+input[type="text"] {
+    width: 30%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+a img {
+    width: 120px;
+    height: 120px;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+a {
+    display: inline-flexbox;
+    margin: 15px;
+    text-decoration: none;
+}
+
+a:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.sign-out-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 10px 0 0;
+}
+
+.notificationContainer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    animation: fadeNotification 5s ease-in-out forwards;
+}
+
+.notification {
+    background-color: mediumslateblue; 
+    color: white;
+    margin-bottom: 10px;
+    padding: 5px 10px; 
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+
+@keyframes fadeNotification {
+    0%, 100% { opacity: 0; bottom: 10px; }
+    10%, 90% { opacity: 1; bottom: 20px; }
+}
+
+@media (max-width: 600px) {
+    .notificationContainer {
+        width: 90%;
+        left: 5%;
+        right: auto;
+    }
+    nav menu {
+        flex-direction: column;
+    }
+
+    nav menu li {
+        padding: 5px 0;
+    }
+}
+
+
