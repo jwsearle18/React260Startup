@@ -12,6 +12,30 @@ html {
     min-height: 100%;
 }
 
+.click-message {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: sienna;
+    background: #000;
+    border-radius: 10px;
+    padding: 5px 10px; 
+}
+
+.sponsor-message {
+    font-style: italic;
+    font-weight: bold;
+    /* margin-top: 5px; */
+    color: rgb(88, 29, 119);
+    
+}
+
+.disclaimer-message {
+    margin-top: 10px;
+    font-size: 0.8em;
+    color: black;
+}
+
 main {
     flex: 1;
   }

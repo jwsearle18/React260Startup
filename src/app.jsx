@@ -20,12 +20,13 @@ export default function App() {
         <nav>
             <menu>
             <li><NavLink to="">Home</NavLink></li>
+            <li><NavLink to="register">Register</NavLink></li>
             <li><NavLink to="signin">Sign in</NavLink></li>
             <li><NavLink to="address">Address</NavLink></li>
             <li><NavLink to="orders">Orders</NavLink></li>
             <li><NavLink to="socialOrders">Social Orders</NavLink></li>
             <li><NavLink to="renterFoodOptions">Renter Food Options</NavLink></li>
-            <li><NavLink to="vrCompanies">Vacation Rental Options</NavLink></li>
+            
             </menu>
         </nav>
 
@@ -33,13 +34,13 @@ export default function App() {
         </header>
 
         <Routes>
-            <Route path='/' element={<Register />} exact />
+            <Route path='/' element={<Vrcompanies />} exact />
+            <Route path='/register' element={<Register />} />
             <Route path='/signin' element={<Signin />} />
             <Route path='/address' element={<Address />} />
             <Route path='/orders' element={<Orders />} />
             <Route path='/socialOrders' element={<SocialOrders />} />
             <Route path='/renterFoodOptions' element={<RenterFoodOptions />} />
-            <Route path='/vrCompanies' element={<Vrcompanies />} />
             <Route path='*' element={<NotFound />} />
         </Routes>
 
