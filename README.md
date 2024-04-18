@@ -76,9 +76,9 @@ For this deliverable I used WebSocket to broadcast orders to renters on the soci
 
  ## React Deliverable
 
-For this deliverable I converted the application over to use React.
+For this deliverable I converted the application over to use React. Also I added an icon for fun.
 
  - **Bundled and transpiled (Vite)** - DONE
- - **Components** - I didn't have time to implement functional components for my project specifically, though the I put the stubs.
- - **Router** - Routing between all components (Register(Home), Sign in, Address, Orders, Social Orders, Renter Food Options, Vacation Rental Options)
- - **Hooks** - I didn't have time to implement this.
+ - **Components** - My Home component works properly. I didn't have time for the other components, but the stubs are there.
+ - **Router** - Routing between all components (Vacation Rental Options(Home), Register, Sign in, Address, Orders, Social Orders, Renter Food Options)
+ - **Hooks** - Hooks implemented in the Home page to display text when you click on any of the options. Hook used to send to proper link when HomeToGo option is clicked.

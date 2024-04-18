@@ -10,7 +10,7 @@ export function Vrcompanies() {
         setClickedCompany(company);
         setShowSponsorMessage(true);
         if (isCorrectChoice) {
-            setMessage(`Thanks for choosing the correct choice: ${company}!`);
+            setMessage(`Thanks for choosing the correct choice - ${company}!`);
             setTimeout(() => {
                 window.location.href = `https://www.${company.toLowerCase()}.com/`;
             }, 1000);
@@ -34,7 +34,7 @@ export function Vrcompanies() {
             {clickedCompany && (
                 <>
                     <p className="click-message">{message}</p>
-                    {showSponsorMessage && <p className="sponsor-message">Sponsored by HomeToGo ;)</p>}
+                    {showSponsorMessage && <p className="sponsor-message">Sponsored by HomeToGo 🙂</p>}
                     <p className="disclaimer-message">not really</p>
                 </>
             )}

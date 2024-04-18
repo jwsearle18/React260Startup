@@ -15,6 +15,7 @@ export default function App() {
     <BrowserRouter>
         <div className='app'>
         <header>
+        
         <h1>Airestock<sup>&reg;</sup></h1>
         
         <nav>
