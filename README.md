@@ -78,8 +78,6 @@ For this deliverable I used WebSocket to broadcast orders to renters on the soci
 
 For this deliverable I converted the application over to use React. Also I added an icon for fun.  I switched to a new github repo for the react version, so the link at the bottom should bring you to the correct one.
 
-For reference, my AWS has been weird recently.  I've had to reboot it a few times.  Send me a discord message if the link doesn't work and I'll reboot the instance so it works.
-
  - **Bundled and transpiled (Vite)** - DONE
  - **Components** - My Home component works properly. I didn't have time for the other components, but the stubs are there.
  - **Router** - Routing between all components (Vacation Rental Options(Home), Register, Sign in, Address, Orders, Social Orders, Renter Food Options)
